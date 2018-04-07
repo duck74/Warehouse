@@ -35,8 +35,11 @@ input {
 
 select {
   background-color: hsla(0, 0%, 100%, 1);
-  font-size: inherit;
-  direction: rtl;
+  font-size: 0.9rem;
+  border-color: #AAAAAA;
+  /*direction: rtl;*/
+  box-sizing: border-box;
+  margin: 0;
 }
 
 textarea {

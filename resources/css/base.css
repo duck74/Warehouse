@@ -43,6 +43,9 @@ select {
   padding: 1rem;
 }
 
+
+
+
 /* Reusable Component - Button */
 
 .test {
@@ -260,10 +263,12 @@ header {
   align-items: center;
   padding: .875rem 1rem;
   border-radius: 54px;
+  font-size: 0.9rem;
 }
 
 .cart img {
   padding-left: .625rem;
+  padding-right: .625rem;
 }
 
 nav {
@@ -417,14 +422,19 @@ nav a::last {
   margin-bottom: 2rem;
   margin-top: 2rem;
   /*font-size: inherit;*/
-  font-size: 1.8em;
+  font-size: 1.5em;
   /*color: #18597F;*/
   color: hsla(0, 0%, 29%, 1);
   font-weight: 300;
 }
 
 #main .hero h2 {
+  width: 400px;
+  margin: 5.5rem auto;
   color: white;
+  padding: 2rem 1rem;
+  background-color: hsla(180, 13%, 13%, 0.5);
+  border-radius: 20px;
 }
 
 #main .button {
@@ -433,6 +443,17 @@ nav a::last {
   padding: .875rem 0;
 }
 
+
+.error h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color:#18597F; 
+}
+
+#main .error-h2 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
 
 /* Footer */
 
