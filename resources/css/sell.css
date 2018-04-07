@@ -1,0 +1,110 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.sell {
+  padding: 1.75rem 11.75rem 1.75rem 11.75rem;
+}
+
+#main h2 {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 'name name name name name . price . quantity'
+                       'description description description description description description description description description'
+                       '. . . . . . . . submit';
+  font-size: inherit;
+  grid-gap: 20px;
+}
+
+input {
+  min-width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.currency {
+  text-align: right;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+  direction: rtl;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: 0.9rem;
+  border: 0px;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+}
+
+#quantity {
+  grid-area: quantity;
+}
+
+#description {
+  grid-area: description;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+}
+
+label {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .sell {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'price quantity'
+                         'description description'
+                         '. submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'price'
+                         'quantity'
+                         'description'
+                         'submit';
+  }
+
+  #submit {
+    justify-self: center;
+  }
+  input {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  #main h2 {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+}
